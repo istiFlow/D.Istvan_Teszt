@@ -160,13 +160,18 @@ innentől kezdve meg tudom hívni pl a szorzast mint: muvelet.szorzas(4,5);
 8. prg
 
 const arr2d = (a,b) => {
-  let arr = new Array(a);
-    for(let i = 0; i < a; i++ ) {
-    arr[i] = new Array(b);
+  let c = [];let k = 1;
+  for (let i = 0; i < a; i++) {
+   
+    for (let j = 0; j < b; j++) {
+      c.push(k * 2);
+     // c[i] = new Array(b);
+      k++;
     }
-    return arr;
+  }
+return c;
     };
 
-    console.log(arr2d(5,10));
+    console.log(arr2d(3,3));
 */
 
